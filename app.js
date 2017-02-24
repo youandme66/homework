@@ -1,0 +1,18 @@
+var express = require('express');
+var path = require('path');
+var bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
+var session = require('express-session');
+var morgan = require('morgan');
+var route = require('./web_router');
+var app = express();
+app.use(morgan('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extend:false}));
+app.use(express.static('public'));
+app.set('views',path.join(__dirname,'views'));
+app.set('view engine','html');
+app.engine('html',require('ejs').renderFile);
+app.use('/',route);
+app.listen(3000);
+console.log('3000');

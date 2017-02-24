@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>添加考题</title>
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/mycss/homework.css">
+	</head>
+	<body style="margin-top: 50px;">
+	   <div class="container">
+	    <div class="row">
+	        <div class="col-lg-12"><h1 class="work">添加考试题目</h1></div>
+	    	<div class="col-lg-12"><p>1.请输入题目:</p></div><br/>
+	    	<div class="col-lg-12"><textarea name="hcontent" id="hcontent" class="form-control" rows="10" style="resize:none;" placeholder="必填项"></textarea></div>
+	    	<div class="col-lg-12"><p>2.请选择问题类型:</p></div>
+	    	<div class="col-lg-12"><div class="input-group">
+			<span class="input-group-addon"><input name="check" type="radio" value="单选" checked/>单选题</span>
+			<span class="input-group-addon"><input name="check" type="radio" value="多选" />多选题</span>
+		</div></div>
+	    	<div class="col-lg-12"><p>3.请输入选项A:</p></div>
+	    	<div class="col-lg-12"><textarea name="ha" id="ha" class="form-control" rows="5" style="resize:none;" placeholder="必填项"></textarea>
+		<p>4.请输入选项B:</p></div>
+	    	<div class="col-lg-12"><textarea name="hb" id="hb" class="form-control" rows="5" style="resize:none;" placeholder="必填项"></textarea></div>
+	    	<div class="col-lg-12"><p>5.请输入选项C:</p></div>
+	    	<div class="col-lg-12"><textarea name="hc" id="hc" class="form-control" rows="5" style="resize:none;" placeholder="没有可以不填"></textarea></div>
+	    	<div class="col-lg-12"><p>6.请输入选项D:</p></div>
+	    	<div class="col-lg-12"><textarea name="hd" id="hd" class="form-control" rows="5" style="resize:none;" placeholder="没有可以不填"></textarea></div>
+	    	<div class="col-lg-12"><p>7.请输入选项E:</p></div>
+	    	<div class="col-lg-12"><textarea name="he" id="he" class="form-control" rows="5" style="resize:none;" placeholder="没有可以不填"></textarea></div>
+	    	<div class="col-lg-12"><p>8.输入此题的正确答案:</p></div>
+	    	<div class="col-lg-12"><div class="input-group">
+		<!--输入组-->
+		<div class="input-group-addon">正确答案</div>
+		<!--输入组头-->
+		<input type="text" name="answer" id="answer" class="form-control" placeholder="比如正确答案是AB,那么就输入AB,单选就写一个" />
+		<!--输入组尾-->
+	</div></div>
+	    	<div class="col-lg-12"><p>9.输入此题的正确解析:</p></div>
+	    	<div class="col-lg-12"><textarea name="hexplain" id="hexplain" class="form-control" rows="10" style="resize:none;" placeholder="必填"></textarea></div><br/>
+	    	<div class="col-lg-12"><br/></div>
+	    	<div class="col-lg-12"><button class="btn btn-success btn-block" id="sub">提交</button>
+			</div>
+			<div class="col-lg-12"><br/>
+			<br/></div>
+			
+		</div>
+	    </div>
+		<script src="/js/jquery-3.1.0.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="/myjs/addHomework.js"></script>
+	</body>
+</html>
